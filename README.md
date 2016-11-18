@@ -35,27 +35,28 @@ Wire up the arduino as follows:
 
 When a serial connection is opened to an Arduino it resets itself, this is a problem for us as the code won’t work as intended, so to get around this we’ll use a 100uF capacitor between the Reset and Ground. This is a simple non-permanent solution, but it does mean that to upload code to the Arduino we need to either press the reset button on the Nano when we’re uploading or temporarily remove the capacitor when uploading.
 
-Connect the Nano to the computer and make note of the COM port it’s using, this can be found in the Arduino IDE (where?). In my case it’s using COM9 so we’ll use that in the code.
+Connect the Nano to the computer and make note of the COM port it’s using (in my case i'm using COM9 so we’ll use that in the python code later), this can be found in the Arduino IDE (where?). Upload the Dust_Cover.ide code to the Arduino.
 
-Save the open.py and close.py files onto the host computer that has Python installed, connect the arduino to the host via USB, and then double click the open.py or close.py files. Each will send a command over the serial connection and will light the corresponding LED (White for OPEN, Red for CLOSE).
+Save the open.py and close.py files onto the host computer that has Python installed, connect the arduino to the host via USB, and then double click the open.py or close.py files. Each will send a command over the serial connection and will light the corresponding LED (White for OPEN, Red for CLOSE). **Once wxGUI.py is working substitute this text.**
 
 Once everything is working we can add the servo and alter the Arduino code.
 
-**Add the servo**
+**Adding the servo**
 
-Instruction are [here](http://playground.arduino.cc/Learning/SingleServoExample), but all we're doing is:
+Instructions are [here](http://playground.arduino.cc/Learning/SingleServoExample), but all we're doing is:
 
-1. connecting the red from the servo to +5V on Arduino.
+1. Connect the red from the servo to +5V on Arduino.
 
 2. Connect black/brown from the servo to Gnd on Arduino.
 
 3. Connect white/orange from the servo to Analog 0 on Arduino.
 
-Now we modify the Arduino code to
+Now we modify the Arduino code to include the servo. The arduino file is called Dust_Cover_Servo.ide
+
 
 **Future Expansion:**
 - How to make sure device is always COM9
 - Add capability to show the current state
-- Add capability to switch on/off the white box
-- Add capability to monitor temperature/humidity and also rain
+- Add capability to switch on/off the flat frame box with a relay
+- Add capability to monitor temperature/humidity and also rainfall
 - Add capability to open/close the roof
