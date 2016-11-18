@@ -35,3 +35,14 @@ Wire up the arduino as follows:
 When a serial connection is opened to an Arduino it resets itself, this is a problem for us as the code won’t work as intended, so to get around this we’ll use a 100uF capacitor between the Reset and Ground. This is a simple non-permanent solution, but it does mean that to upload code to the Arduino we need to either press the reset button on the Nano when we’re uploading or temporarily remove the capacitor when uploading.
 
 Connect the Nano to the computer and make note of the COM port it’s using, this can be found in the Arduino IDE (where?). In my case it’s using COM9 so we’ll use that in the code.
+
+Save the open.py and close.py files onto the host computer that has Python installed, connect the arduino to the hsot via USB, and then double click the open.py or close.py files. Each will send a command over the serial connection and will light the corresponding LED (White for OPEN, Red for CLOSE).
+
+Once everything is working we can add the servo and code.
+
+**Future Expansion:**
+- How to make sure device is always COM9
+- Add capability to show the current state
+- Add capability to switch on/off the white box
+- Add capability to monitor temperature/humidity and also rain
+- Add capability to open/close the roof
