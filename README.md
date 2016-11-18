@@ -17,10 +17,12 @@ Add python path to PATH (instructions [here](http://stackoverflow.com/questions/
 Start a CMD prompt as administrator (instructions [here](https://technet.microsoft.com/en-us/library/cc947813(v=ws.10).aspx)) 
 
 From the CMD prompt we manually install Pip using the following command
-$python get-pip.py
+`python get-pip.py`
 
 Next we want to install pyserial, again at the CMD prompt we type
-$python -m pip install pyserial
 
-Start the Arduino IDE (download here)
+`python -m pip install pyserial`
+
+Start the Arduino IDE (download [here](https://www.arduino.cc/en/Main/Software))
+
 Wire up the arduino as follows
