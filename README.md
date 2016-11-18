@@ -31,3 +31,7 @@ Wire up the arduino as follows:
 ![alt text][logo]
 
 [logo]: http://i.imgur.com/s5vJ4pn.png
+
+When a serial connection is opened to an Arduino it resets itself, this is a problem for us as the code won’t work as intended, so to get around this we’ll use a 100uF capacitor between the Reset and Ground. This is a simple non-permanent solution, but it does mean that to upload code to the Arduino we need to either press the reset button on the Nano when we’re uploading or temporarily remove the capacitor when uploading.
+
+Connect the Nano to the computer and make note of the COM port it’s using, this can be found in the Arduino IDE (where?). In my case it’s using COM9 so we’ll use that in the code.
