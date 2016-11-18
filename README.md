@@ -4,11 +4,11 @@ An open source project to automate some aspects of amateur astronomy.
 **Aim: Use an Arduino Nano to open and close the dust cover on a telescope.**
 
 Requirements:
--Arduino Nano
--Servo
--2x LED
--2x 220 Ohm Resistors
--A few wires
+- Arduino Nano
+- Servo
+- 2x LED
+- 2x 220 Ohm Resistors
+- A few wires
 
 Installed Python 2.7.12 (download [here](https://www.python.org/downloads/)
 
