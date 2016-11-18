@@ -9,6 +9,7 @@ Requirements:
 - 2x LED
 - 2x 220 Ohm Resistors
 - A few wires
+- Posterboard (Very light weight)
 
 Instal Python 2.7.12 (download [here](https://www.python.org/downloads/)
 
