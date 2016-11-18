@@ -44,8 +44,11 @@ Once everything is working we can add the servo and alter the Arduino code.
 **Add the servo**
 
 Instruction are [here](http://playground.arduino.cc/Learning/SingleServoExample), but all we're doing is:
+
 1. connecting the red from the servo to +5V on Arduino.
+
 2. Connect black/brown from the servo to Gnd on Arduino.
+
 3. Connect white/orange from the servo to Analog 0 on Arduino.
 
 Now we modify the Arduino code to
