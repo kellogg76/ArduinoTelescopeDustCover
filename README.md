@@ -30,4 +30,4 @@ Wire up the arduino as follows:
 
 ![alt text][logo]
 
-[logo]: http://i.imgur.com/s5vJ4pn.png "Logo Title Text 2"
+[logo]: http://i.imgur.com/s5vJ4pn.png
