@@ -26,4 +26,5 @@ Next we want to install pyserial, again at the CMD prompt we type
 
 Start the Arduino IDE (download [here](https://www.arduino.cc/en/Main/Software))
 
-Wire up the arduino as follows
+Wire up the arduino as follows: 
+http://i.imgur.com/s5vJ4pn.png
