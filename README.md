@@ -28,3 +28,8 @@ Start the Arduino IDE (download [here](https://www.arduino.cc/en/Main/Software))
 
 Wire up the arduino as follows: 
 [logo]: http://i.imgur.com/s5vJ4pn.png
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
