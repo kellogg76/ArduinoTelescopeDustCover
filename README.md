@@ -10,7 +10,7 @@ Servo
 2x 220 Ohm Resistors
 A few wires
 
-Installed Python 2.7.12 (download here)
+Installed Python 2.7.12 (download [here](https://www.python.org/downloads/)
 Add python path to PATH (instructions here)
 Start a CMD prompt as administrator (instructions here) 
 From the CMD prompt we manually install Pip using the following command
