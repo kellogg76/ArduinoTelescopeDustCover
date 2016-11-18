@@ -51,12 +51,13 @@ Instructions are [here](http://playground.arduino.cc/Learning/SingleServoExample
 
 3. Connect white/orange from the servo to Analog 0 on Arduino.
 
-Now we modify the Arduino code to include the servo. The arduino file is called Dust_Cover_Servo.ide
+Now we modify the Arduino code to include the servo. The arduino file is called Dust_Cover_Servo.ide, upload it to the Arduino and change the values for `static int open_angle` and `static int open_angle` to suit your configuration.
 
+Affix the servo to the OTA.
 
 **Future Expansion:**
 - How to make sure device is always COM9
-- Add capability to show the current state
 - Add capability to switch on/off the flat frame box with a relay
 - Add capability to monitor temperature/humidity and also rainfall
 - Add capability to open/close the roof
+- Improve the wxGUI to include current state of dust cover/roof/flat frame box, jog buttons for open/close, show temp/humidity.
