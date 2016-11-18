@@ -10,7 +10,7 @@ Requirements:
 - 2x 220 Ohm Resistors
 - A few wires
 
-Installed Python 2.7.12 (download [here](https://www.python.org/downloads/)
+Instal Python 2.7.12 (download [here](https://www.python.org/downloads/)
 
 Add python path to PATH (instructions [here](http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7))
 
@@ -18,9 +18,9 @@ Start a CMD prompt as administrator (instructions [here](https://technet.microso
 
 From the CMD prompt we manually install Pip using the following command
 $python get-pip.py
+
 Next we want to install pyserial, again at the CMD prompt we type
 $python -m pip install pyserial
-
 
 Start the Arduino IDE (download here)
 Wire up the arduino as follows
