@@ -37,11 +37,12 @@ When a serial connection is opened to an Arduino it resets itself, this is a pro
 
 Connect the Nano to the computer and make note of the COM port it’s using, this can be found in the Arduino IDE (where?). In my case it’s using COM9 so we’ll use that in the code.
 
-Save the open.py and close.py files onto the host computer that has Python installed, connect the arduino to the hsot via USB, and then double click the open.py or close.py files. Each will send a command over the serial connection and will light the corresponding LED (White for OPEN, Red for CLOSE).
+Save the open.py and close.py files onto the host computer that has Python installed, connect the arduino to the host via USB, and then double click the open.py or close.py files. Each will send a command over the serial connection and will light the corresponding LED (White for OPEN, Red for CLOSE).
 
-Once everything is working we can add the servo and code.
+Once everything is working we can add the servo and alter the Arduino code.
 
 **Add the servo**
+
 Instruction are [here](http://playground.arduino.cc/Learning/SingleServoExample), but all we're doing is:
 1. connecting the red from the servo to +5V on Arduino.
 2. Connect black/brown from the servo to Gnd on Arduino.
