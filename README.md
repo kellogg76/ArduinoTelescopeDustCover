@@ -32,4 +32,4 @@ Wire up the arduino as follows:
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: http://i.imgur.com/s5vJ4pn.png "Logo Title Text 2"
