@@ -17,6 +17,7 @@ Add python path to PATH (instructions [here](http://stackoverflow.com/questions/
 Start a CMD prompt as administrator (instructions [here](https://technet.microsoft.com/en-us/library/cc947813(v=ws.10).aspx)) 
 
 From the CMD prompt we manually install Pip using the following command
+
 `python get-pip.py`
 
 Next we want to install pyserial, again at the CMD prompt we type
