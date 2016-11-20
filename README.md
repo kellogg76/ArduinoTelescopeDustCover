@@ -67,7 +67,12 @@ The Arduino code for this step is called Elentirmo_v0.1.ide, upload it to the Ar
 
 I've also created a Python GUI to control the Dust Cover and Flat Box, it's called Elentirmo_GUI_v0.1.py. Make sure you've installed Pyserial before running it. You also need to change the COM to whichever COM your Arduino is using.
 
-**pics of GUI**
+![alt text][logo]
+
+[logo]: http://i.imgur.com/ZBYA1Sw.png
+![alt text][logo]
+
+[logo]: http://i.imgur.com/v5vNbDZ.png
 
 **Future Expansion:**
 - How to make sure device is always COM9
