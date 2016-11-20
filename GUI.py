@@ -90,7 +90,7 @@ def flat_on():
 
 
     print "Sending serial command to turn on the flat box via relay."
-    ser.write("F")
+    ser.write("Q")
 
     print "Opening serial connection."
 
@@ -122,7 +122,7 @@ def flat_off():
 
 
     print "Sending serial command to turn off the flat box via relay."
-    ser.write("Q")
+    ser.write("F")
 
     print "Opening serial connection."
 
