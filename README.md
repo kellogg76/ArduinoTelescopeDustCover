@@ -61,9 +61,9 @@ Now we modify the Arduino code to include the servo. The arduino file is called 
 Affix the servo to the OTA.
 
 **Controlling a Flat Box**
-To control my flat box (from Ali) I bought a 4 relay switch (from Ali) and wired it up to be in a Normally Open (NO) format so that when theres no signal from the Arduino the relay is not activating the flat panel.
+To control my flat box (from [AliExpress](https://www.aliexpress.com/item/LED-panel-light-square-lampada-300x300-18W-high-bright-led-indoor-ceiling-lamp-SMD5630-white-warm/1785529655.html)) I bought a 4 relay switch (from [AliExpress](https://www.aliexpress.com/item/Brand-New-5V-4-Channel-Relay-Module-for-Arduino-PIC-ARM-DSP-AVR-Raspberry-Pi/1952619257.html)) and wired it up to be in a Normally Open (NO) format so that when theres no signal from the Arduino the relay is not activating the flat panel.
 
-The Arduino code for this step is called Elentirmo_v0.1.ide, upload it to the Arduino and wire digital Pin 10 on the Arduino to CH1 on Relay Module as below. **Fritz**
+The Arduino code for this step is called Elentirmo_v0.1.ide, upload it to the Arduino and wire digital Pin 10 on the Arduino to IN1 on Relay Module as below. In my image below i've used an LED in place of a lightbulb as Fritzing didn't have one.
 
 ![alt text][relay]
 
@@ -83,4 +83,4 @@ I've also created a Python GUI to control the Dust Cover and Flat Box, it's call
 - Add capability to switch on/off the DSLR
 - Add capability to monitor temperature/humidity and also rainfall
 - Add capability to open/close the roof
-- Improve the GUI to include jog buttons for open/close and show temp/humidity.
+- Improve the GUI to include jog buttons for open/close and show temp/humidity
