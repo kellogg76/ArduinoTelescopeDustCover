@@ -1,5 +1,3 @@
-// Open a serial connection and open/close the dust cover using a servo when input is received
-
 //Servo Setup
 //Connect servo to GND (black or brown wire), 5V (red wire) and the signal (white or orange wire) to Analog 0
 #include <Servo.h>
@@ -14,19 +12,33 @@ int ledYellow = 3;        // Yellow LED connected to digital pin 3 for flat pane
 int ledRed = 6;        // Red LED connected to digital pin 6 for closing cover
 int ledWhite = 12;     // White LED connected to digital pin 12 for opening cover
 
+
 //Relay Setup
-#define CH1 10   // Connect Digital Pin 10 on Arduino to CH1 on Relay Module
-#define CH2 9   // Connect Digital Pin 9 on Arduino to CH2 on Relay Module
-#define CH3 8   // Connect Digital Pin 8 on Arduino to CH3 on Relay Module
-#define CH4 7   // Connect Digital Pin 7 on Arduino to CH4 on Relay Module
+#define CH1 10   // Connect Digital Pin 10 on Arduino to CH1 on Relay Module (may be labelled IN1)
+#define CH2 9   // Connect Digital Pin 9 on Arduino to CH2 on Relay Module (may be labelled IN2)
+#define CH3 8   // Connect Digital Pin 8 on Arduino to CH3 on Relay Module (may be labelled IN3)
+#define CH4 7   // Connect Digital Pin 7 on Arduino to CH4 on Relay Module (may be labelled IN4)
 
 void setup(){
  // Open serial connection.
  Serial.begin(9600);
+ 
+ //Define the LED outputs
  pinMode(ledWhite, OUTPUT); 
  pinMode(ledRed, OUTPUT);
  pinMode(ledYellow, OUTPUT);
- pinMode(1,OUTPUT);
+
+ //Setup all the Relay Pins
+ pinMode(CH1, OUTPUT);
+ pinMode(CH2, OUTPUT);
+ pinMode(CH3, OUTPUT);
+ pinMode(CH4, OUTPUT);
+ digitalWrite(CH1, HIGH);  //Dectivate realy channel 1
+ digitalWrite(CH2, HIGH);  //Dectivate realy channel 2
+ digitalWrite(CH3, HIGH);  //Dectivate realy channel 3
+ digitalWrite(CH4, HIGH);  //Dectivate realy channel 4
+
+ //Define the servo
  servo1.attach(0); //analog pin 0
 
 //2x LED Blink startup check
@@ -45,16 +57,6 @@ delay(500);
 digitalWrite(ledRed, LOW);
 digitalWrite(ledWhite, LOW);     
 digitalWrite(ledYellow, LOW); 
-
-//Setup all the Relay Pins
-pinMode(CH1, OUTPUT);
-pinMode(CH2, OUTPUT);
-pinMode(CH3, OUTPUT);
-pinMode(CH4, OUTPUT);
-digitalWrite(CH1, HIGH);  //Dectivate realy channel 1
-digitalWrite(CH2, HIGH);  //Dectivate realy channel 2
-digitalWrite(CH3, HIGH);  //Dectivate realy channel 3
-digitalWrite(CH4, HIGH);  //Dectivate realy channel 4
 }
 
 void loop(){
