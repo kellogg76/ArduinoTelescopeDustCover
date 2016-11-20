@@ -52,9 +52,9 @@ Instructions are [here](http://playground.arduino.cc/Learning/SingleServoExample
 
 3. Connect white/orange from the servo to Analog 0 on Arduino.
 
-![alt text][logo]
+![alt text][servo]
 
-[logo]: http://i.imgur.com/iq4v8A0.png
+[servo]: http://i.imgur.com/iq4v8A0.png
 
 Now we modify the Arduino code to include the servo. The arduino file is called Dust_Cover_Servo.ide, upload it to the Arduino and change the values for `static int open_angle` and `static int open_angle` to suit your configuration.
 
