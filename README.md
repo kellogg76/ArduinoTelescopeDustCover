@@ -75,7 +75,7 @@ I've also created a Python GUI to control the Dust Cover and Flat Box, it's call
 [logo]: http://i.imgur.com/v5vNbDZ.png
 
 **Future Expansion:**
-- How to make sure device is always COM6
+- How to make sure device is always COM6.
 - Add capability to switch on/off the flat frame box with a relay
 - Add capability to monitor temperature/humidity and also rainfall
 - Add capability to open/close the roof
