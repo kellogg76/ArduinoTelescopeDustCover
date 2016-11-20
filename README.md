@@ -29,13 +29,13 @@ Start the Arduino IDE (download [here](https://www.arduino.cc/en/Main/Software))
 
 Wire up the arduino as follows: 
 
-![alt text][logo]
+![alt text][basic]
 
-[logo]: http://i.imgur.com/s5vJ4pn.png
+[basic]: http://i.imgur.com/s5vJ4pn.png
 
 When a serial connection is opened to an Arduino it resets itself, this is a problem for us as the code won’t work as intended, so to get around this we’ll use a 100uF capacitor between the Reset and Ground. This is a simple non-permanent solution, but it does mean that to upload code to the Arduino we need to either press the reset button on the Nano when we’re uploading or temporarily remove the capacitor when uploading.
 
-Connect the Nano to the computer and make note of the COM port it’s using (in my case i'm using COM9 so we’ll use that in the python code later), this can be found in the Arduino IDE (where?). Upload the Dust_Cover.ide code to the Arduino.
+Connect the Nano to the computer and make note of the COM port it’s using (in my case i'm using COM6 so we’ll use that in the python code later), this can be found in the Arduino IDE (where?). Upload the Dust_Cover.ide code to the Arduino.
 
 Save the open.py and close.py files onto the host computer that has Python installed, connect the arduino to the host via USB, and then double click the open.py or close.py files. Each will send a command over the serial connection and will light the corresponding LED (White for OPEN, Red for CLOSE). **Once wxGUI.py is working substitute this text.**
 Install wxPython from [here](https://www.wxpython.org/download.php). 
@@ -54,7 +54,7 @@ Instructions are [here](http://playground.arduino.cc/Learning/SingleServoExample
 
 ![alt text][servo]
 
-[servo]: http://i.imgur.com/iq4v8A0.png
+[servo]: http://i.imgur.com/UXRSnkK.png
 
 Now we modify the Arduino code to include the servo. The arduino file is called Dust_Cover_Servo.ide, upload it to the Arduino and change the values for `static int open_angle` and `static int open_angle` to suit your configuration.
 
@@ -65,13 +65,22 @@ To control my flat box (from Ali) I bought a 4 relay switch (from Ali) and wired
 
 The Arduino code for this step is called Elentirmo_v0.1.ide, upload it to the Arduino and wire digital Pin 10 on the Arduino to CH1 on Relay Module as below. **Fritz**
 
+![alt text][relay]
+
+[relay]: http://i.imgur.com/iq4v8A0.png
+
 I've also created a Python GUI to control the Dust Cover and Flat Box, it's called Elentirmo_GUI_v0.1.py. Make sure you've installed Pyserial before running it. You also need to change the COM to whichever COM your Arduino is using.
 
-**pics of GUI**
+![alt text][GUI1]
 
+[GUI1]: http://i.imgur.com/ZBYA1Sw.png
+
+![alt text][GUI2]
+
+[GUI2]: http://i.imgur.com/v5vNbDZ.png
 **Future Expansion:**
-- How to make sure device is always COM9
-- Add capability to switch on/off the flat frame box with a relay
+- How to make sure device is always COM6
+- Add capability to switch on/off the DSLR
 - Add capability to monitor temperature/humidity and also rainfall
 - Add capability to open/close the roof
-- Improve the wxGUI to include current state of dust cover/roof/flat frame box, jog buttons for open/close, show temp/humidity.
+- Improve the GUI to include jog buttons for open/close and show temp/humidity.
