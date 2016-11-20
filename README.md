@@ -59,7 +59,11 @@ Affix the servo to the OTA.
 **Controlling a Flat Box**
 To control my flat box (from Ali) I bought a 4 relay switch (from Ali) and wired it up to be in a Normally Open (NO) format so that when theres no signal from the Arduino the relay is not activating the flat panel.
 
-The Arduino code for this step is called Elentirmo_v0.1.ide, upload it to the Arduino and wire digital Pin 10 on the Arduino to CH1 on Relay Module as below. **Fritz**
+The Arduino code for this step is called Elentirmo_v0.1.ide, upload it to the Arduino and wire digital Pin 10 on the Arduino to CH1 on Relay Module as below.
+
+![alt text][logo]
+
+[logo]: http://i.imgur.com/iq4v8A0.jpg
 
 I've also created a Python GUI to control the Dust Cover and Flat Box, it's called Elentirmo_GUI_v0.1.py. Make sure you've installed Pyserial before running it. You also need to change the COM to whichever COM your Arduino is using.
 
