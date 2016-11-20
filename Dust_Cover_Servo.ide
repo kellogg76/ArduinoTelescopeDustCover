@@ -3,59 +3,70 @@
 //Servo Setup
 //Connect servo to GND (black or brown wire), 5V (red wire) and the signal (white or orange wire) to Analog 0
 #include <Servo.h>
-Servo servo1
+Servo servo1;
+int pos = 0; //variable to store servo position
+static int open_angle = 90;   //Determine the angle for your own setup through trial and error
+static int close_angle = 0;    //Determine the angle for your own setup through trial and error
+
 
 //LED Setup
-int ledRed = 6;        // Red LED connected to digital pin 6
-int ledWhite = 12;     // White LED connected to digital pin 12
+int ledYellow = 3;        // Yellow LED connected to digital pin 3 for flat panel relay
+int ledRed = 6;        // Red LED connected to digital pin 6 for closing cover
+int ledWhite = 12;     // White LED connected to digital pin 12 for opening cover
 
 void setup(){
  // Open serial connection.
  Serial.begin(9600);
  pinMode(ledWhite, OUTPUT); 
  pinMode(ledRed, OUTPUT);
+ pinMode(ledYellow, OUTPUT);
  pinMode(1,OUTPUT);
-  servo1.attach(14); //analog pin 0
-  //servo1.setMaximumPulse(2000);
-  //servo1.setMinimumPulse(700);
+ servo1.attach(0); //analog pin 0
 
 //2x LED Blink startup check
 digitalWrite(ledRed, HIGH);
 digitalWrite(ledWhite, HIGH);
-delay(500);             
+digitalWrite(ledYellow, HIGH);
+delay(500);
 digitalWrite(ledRed, LOW);
-digitalWrite(ledWhite, LOW);
-delay(500); 
+digitalWrite(ledWhite, LOW);     
+digitalWrite(ledYellow, LOW); 
+delay(500);   
 digitalWrite(ledRed, HIGH);
 digitalWrite(ledWhite, HIGH);
-delay(500);             
+digitalWrite(ledYellow, HIGH);
+delay(500);
 digitalWrite(ledRed, LOW);
-digitalWrite(ledWhite, LOW);
+digitalWrite(ledWhite, LOW);     
+digitalWrite(ledYellow, LOW); 
 }
-
 
 void loop(){
 //Nothing in here as we’re only using the Arduino to listen to the serial port
 }
 
 void serialEvent()
- static int open_angle = 90;   //Determine the angle for your own setup through trial and error
- static int close_angle = 0;    //Determine the angle for your own setup through trial and error
 
 {if (Serial.available()) {
    char ser = Serial.read();
    if(ser == 'O'){  //Detect an open command
     //Do something
     digitalWrite(ledWhite, HIGH);
-    servo1.write(open_angle)
+    servo1.write(open_angle);
     delay(1000);
     digitalWrite(ledWhite, LOW);
    }else if(ser == 'C'){   //Detect a close command
     //Do something else
     digitalWrite(ledRed, HIGH);
-    servo1.write(close_angle)
+    servo1.write(close_angle);
     delay(1000);
     digitalWrite(ledRed, LOW);
-   }
+   }else if(ser == 'F'){   //Detect a turn on flat panel via relay command
+    //Do something else
+    digitalWrite(ledYellow, HIGH);
+    //servo1.write(close_angle);
+    delay(1000);
+    digitalWrite(ledYellow, LOW);
  }
+}
 }
