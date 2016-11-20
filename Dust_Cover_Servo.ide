@@ -67,6 +67,12 @@ void serialEvent()
     //servo1.write(close_angle);
     delay(1000);
     digitalWrite(ledYellow, LOW);
+    }else if(ser == 'Q'){   //Detect a turn off flat panel via relay command
+    //Do something else
+    digitalWrite(ledYellow, HIGH);
+    //servo1.write(close_angle);
+    delay(1000);
+    digitalWrite(ledYellow, LOW);
  }
 }
 }
