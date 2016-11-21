@@ -77,6 +77,9 @@ I've also created a very basic Python GUI to control the Dust Cover and Lightbox
 ![alt text][GUI2]
 
 [GUI2]: http://i.imgur.com/v5vNbDZ.png
+
+I'm also working on a method to control the LED lightbox via Sequence Generator Pro using a modified version of Jared's [ArduinoLightbox](https://github.com/jwellman80/ArduinoLightbox) code, once it's ready i'll add it to this guide.
+
 **Future Expansion:**
 - How to make sure device is always COM6
 - Add capability to switch on/off the DSLR
