@@ -6,8 +6,9 @@ An open source project to automate some aspects of amateur astronomy.
 Requirements:
 - Arduino Nano (like [this](https://www.aliexpress.com/item/Nano-3-0-controller-compatible-with-arduino-nano-CH340-USB-driver-with-CABLE-NANO-V3-0/32478082112.html?spm=2114.01010208.3.11.omwhu1&ws_ab_test=searchweb0_0,searchweb201602_5_10065_10068_10084_10083_10080_10082_10081_10060_10061_10062_10056_10055_10054_10059_10078_10079_10073_10096_10070_10100_10052_423_10050_10051_424,searchweb201603_8&btsid=b7afc5ec-93f1-4158-8d06-f842e11ed59a)
 - Servo (like [this](https://www.aliexpress.com/item/Micro-9g-servo-RC-SG90-Aircraft-airplane-model-parts-for-Unique-model-Biplane-Helicopter-Accessories/32677485253.html?spm=2114.01010208.3.21.hMGnOQ&ws_ab_test=searchweb0_0,searchweb201602_5_10065_10068_10084_10083_10080_10082_10081_10060_10061_10062_10056_10055_10054_10059_10078_10079_10073_10096_10070_10100_10052_423_10050_10051_424,searchweb201603_8&btsid=b4745c77-5a61-4155-9d28-949cdfefc80d)
-- 2x LED
-- 2x 220 Ohm Resistors
+- 2x LED (optional)
+- 2x 220 Ohm Resistors (only reuired if using LED's)
+- 100uF capacitor (optional)
 - A few wires
 - Black Posterboard (Very light weight)
 
