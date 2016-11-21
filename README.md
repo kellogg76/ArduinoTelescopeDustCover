@@ -86,3 +86,4 @@ I'm also working on a method to control the LED lightbox via Sequence Generator 
 - Add capability to monitor temperature/humidity and also rainfall
 - Add capability to open/close the roof
 - Improve the GUI to include jog buttons for open/close and show temp/humidity
+- Make PC tweet relay actions
