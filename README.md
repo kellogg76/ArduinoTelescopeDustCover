@@ -68,7 +68,7 @@ The Arduino code for this step is called Elentirmo_v0.1.ide, upload it to the Ar
 
 [relay]: http://i.imgur.com/iq4v8A0.png
 
-I've also created a very basic Python GUI to control the Dust Cover and Lightbox, it's called Elentirmo_GUI_v0.1.py. Make sure you've installed Pyserial before running it. You don't forget to make sure you changed the COM port to whichever COM your Arduino is using.
+I've also created a very basic Python GUI to control the Dust Cover and Lightbox, it's called Elentirmo_GUI_v0.1.py. Make sure you've installed Pyserial before running it. Also don't forget to make sure you've changed the COM port to whichever COM your Arduino is using.
 
 ![alt text][GUI1]
 
@@ -77,13 +77,3 @@ I've also created a very basic Python GUI to control the Dust Cover and Lightbox
 ![alt text][GUI2]
 
 [GUI2]: http://i.imgur.com/v5vNbDZ.png
-
-I'm also working on a method to control the LED lightbox via Sequence Generator Pro using a modified version of Jared's [ArduinoLightbox](https://github.com/jwellman80/ArduinoLightbox) code, once it's ready i'll add it to this guide.
-
-**Future Expansion:**
-- How to make sure device is always COM6
-- Add capability to switch on/off the DSLR
-- Add capability to monitor temperature/humidity and also rainfall
-- Add capability to open/close the roof
-- Improve the GUI to include jog buttons for open/close and show temp/humidity
-- Make PC tweet relay actions
